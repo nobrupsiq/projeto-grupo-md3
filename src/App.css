@@ -1,44 +1,35 @@
-* {
+:root{
+  --purple: #6639DA;
+  --blue: #61BAFC;
+  --orange: #FDA529;
+  --gray: #C2C4D1;
+  --white: white;
+}
+*{
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  color: #333;
-  --type-first: 'Poppins', georgia;
-  --type-second: Helvetica, Arial, sans-serif;
-  font-family: var(--type-first);
-}
+.bg-purple{background-color: var(--purple);}
+.bg-blue{background-color: var(--blue);}
+.bg-orange{background-color: var(--orange);}
+.bg-gray{background-color: var(--gray);}
+.bg-white{background-color: var(--white);}
 
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-}
+.t-purple{color: var(--purple);}
+.t-blue{color: var(--blue);}
+.t-orange{color: var(--orange);}
+.t-gray{color: var(--gray);}
+.t-white{color: var(--white);}
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+.hover\:t-purple:hover{color: var(--purple);}
+.hover\:t-blue:hover{color: var(--blue);}
+.hover\:t-orange:hover{color: var(--orange);}
+.hover\:t-gray:hover{color: var(--gray);}
+.hover\:t-white:hover{color: var(--white);}
 
-img {
-  display: block;
-  max-width: 100%;
-}
 
-button,
-input {
-  display: block;
-  font-size: 1rem;
-  font-family: var(--type-first);
-  color: #333;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+.carousel {
+  overflow: hidden;
 }

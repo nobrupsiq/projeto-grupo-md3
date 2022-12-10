@@ -1,0 +1,26 @@
+.Items {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+    padding: 40px 1em 80px 1em;
+    justify-content: center;
+    gap: 40px;
+
+    height: 1200px;
+    overflow-y: auto;
+}
+
+.Items>div {
+    width: 25%;
+}
+
+.Items>div>img {
+    height: 600px;
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .Items>div {
+        width: 100%;
+    }
+}
