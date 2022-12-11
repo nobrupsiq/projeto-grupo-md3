@@ -5,9 +5,6 @@
     padding: 40px 1em 80px 1em;
     justify-content: center;
     gap: 40px;
-
-    height: 1200px;
-    overflow-y: auto;
 }
 
 .Items>div {

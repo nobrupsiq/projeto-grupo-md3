@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item'
-
 import "./Items.css"
 
-function Items({lista}) {
+function Items({ lista }) {
 
    let [lista2, setLista2] = useState([])
 
-   useEffect(()=>{
+   useEffect(() => {
       setLista2(lista);
-   },[lista])
+   }, [lista])
 
    return (
       <div className='Items'>
-         {lista2.map((e,i)=>{
-            return <Item key={i} {...e} />
+         {lista2.map((elemento, indice) => {
+            return <Item key={indice} {...elemento} />
          })}
       </div>
    );

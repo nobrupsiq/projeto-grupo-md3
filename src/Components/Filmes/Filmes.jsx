@@ -1,23 +1,17 @@
 import React from 'react';
+import Footer from '../Footer';
+import Header from '../Header';
 
 function Filmes() {
-   return <h1>filmes</h1>
-
-}
-
-function Bar() {
-   const bar = {
-      display: 'flex',
-      justifyContent: 'center',
-      background: '#6639DA',
-      color: '#fff',
-      padding: '10px',
-   }
    return (
       <div>
-         <h1 style={bar}>Filmes</h1>
+         <Header />
+         <section>
+            <h1>TESTE FILMES</h1>
+         </section>
+         <Footer />
       </div>
    )
-}
 
-export default Bar;
+}
+export default Filmes;

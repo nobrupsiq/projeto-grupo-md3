@@ -1,34 +1,103 @@
-:root{
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 4rem;
+  margin: 0px;
+  box-sizing: border-box;
+  --type-first: 'Poppins', georgia;
+  --type-second: Helvetica, Arial, sans-serif;
+  font-family: var(--type-first)
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--type-first);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 75rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+:root {
   --purple: #6639DA;
   --blue: #61BAFC;
   --orange: #FDA529;
   --gray: #C2C4D1;
   --white: white;
-}
-*{
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+  --black: black;
 }
 
-.bg-purple{background-color: var(--purple);}
-.bg-blue{background-color: var(--blue);}
-.bg-orange{background-color: var(--orange);}
-.bg-gray{background-color: var(--gray);}
-.bg-white{background-color: var(--white);}
 
-.t-purple{color: var(--purple);}
-.t-blue{color: var(--blue);}
-.t-orange{color: var(--orange);}
-.t-gray{color: var(--gray);}
-.t-white{color: var(--white);}
+.bg-purple {
+  background-color: var(--purple);
+}
 
-.hover\:t-purple:hover{color: var(--purple);}
-.hover\:t-blue:hover{color: var(--blue);}
-.hover\:t-orange:hover{color: var(--orange);}
-.hover\:t-gray:hover{color: var(--gray);}
-.hover\:t-white:hover{color: var(--white);}
+.bg-blue {
+  background-color: var(--blue);
+}
 
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.t-purple {
+  color: var(--purple);
+}
+
+.t-blue {
+  color: var(--blue);
+}
+
+.t-orange {
+  color: var(--orange);
+}
+
+.t-gray {
+  color: var(--gray);
+}
+
+.t-white {
+  color: var(--white);
+}
 
 .carousel {
   overflow: hidden;

@@ -6,7 +6,6 @@ function Footer() {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-around',
-      padding: '10px 0',
       backgroundColor: '#6639DA',
       color: '#FFF',
       padding: '20px 0'
