@@ -54,6 +54,7 @@ a {
   --blue: #61BAFC;
   --orange: #FDA529;
   --gray: #C2C4D1;
+  --gray-2: #404040;
   --white: white;
   --black: black;
 }
@@ -101,4 +102,49 @@ a {
 
 .carousel {
   overflow: hidden;
+}
+
+.carousel-control-next{display: none;}
+.carousel-control-prev{display: none;}
+
+input, select{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: solid 2px #C2C4D1;
+}
+input:hover, select:hover{
+   border: solid 2px #61BAFC;
+   /* box-shadow: 3px 3px 0px black; */
+}
+
+
+label{
+  position: relative;
+  display: block;
+}
+
+label input{
+  width: 100%;
+}
+
+label::after{
+  content: attr(data);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  padding: 0px 5px;
+  color: #00000055;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.capa-filmes{
+  background-color: var(--gray-2);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
 }

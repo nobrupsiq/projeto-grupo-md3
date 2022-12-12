@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom';
 import style from './Buttons.module.css'
+
 function Buttons() {
 
    return (
       <div className={style.btnContainer}>
-         <Link to={"/"} >
+         <Link to={"adicionar"} >
             <button>Adicionar filme</button>
          </Link>
-         <Link to={"/"}>
+         <Link to={"atualizar"}>
             <button>Atualizar filme</button>
          </Link>
-         <Link to={"/"}>
+         <Link to={"remover"}>
             <button >Remover filme</button>
          </Link>
       </div>

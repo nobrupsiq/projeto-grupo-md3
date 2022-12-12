@@ -17,11 +17,13 @@ function Home() {
   let [lista, setLista] = useState([]);
 
   useEffect(() => {
-    let url = 'https://nobrupsiq.github.io/projeto-individual-resilia-MD3/db.json';
+    // let url = 'https://nobrupsiq.github.io/projeto-individual-resilia-MD3/db.json';
+    let url = 'http://localhost:3000/filmes';
 
     const getPosts = async () => {
       const { data: res } = await axios.get(url);
-      setLista(res.filmes);
+      // setLista(res.filmes);
+      setLista(res);
     };
     getPosts();
   }, []);

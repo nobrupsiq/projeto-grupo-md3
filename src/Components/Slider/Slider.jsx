@@ -7,7 +7,7 @@ function Slider() {
   return (
     <div className='Carousel-parent'>
       <Carousel style={{ height: "50vh" }}>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <div className='bloco'>
             <h1>Pantera negra</h1>
             <p>Mais vendido</p>
@@ -16,7 +16,7 @@ function Slider() {
             src="https://c.wallhere.com/photos/01/41/Black_Panther_Avenger_action_figures-1335921.jpg!d"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <div className='bloco'>
             <h1>Creed III</h1>
             <p>Em breve...</p>
@@ -25,7 +25,7 @@ function Slider() {
             src="https://one-cinema.s3.sa-east-1.amazonaws.com/filmes/creed-ii/10062020/2048/background-creed-ii.jpg"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <div className='bloco'>
             <h1>Adão Negro</h1>
             <p>Lançamento</p>

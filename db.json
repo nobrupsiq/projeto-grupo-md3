@@ -1,19 +1,100 @@
 {
-  "posts": [
+  "filmes": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "titulo": "Adão Negro 3",
+      "genero": "Adão Negro 2",
+      "descricao": "Adão Negro é o filme solo do anti-herói, baseado no personagem em quadrinhos    Black Adam (Dwayne Johnson) da DC Comics, grande antagonista de Shazam!, tendo no longa, sua história de origem explorada, e revelando seu passado de escravo no país Kahndaq. Nascido no Egito Antigo, o anti-herói tem super força, velocidade, resistência, capacidade de voar e de disparar raios.",
+      "imagem": "https://www.barrashopping.com.br/sites/testes/files/cinema/ad__o-negro_1.jpg",
+      "trailer": "https://www.youtube.com/watch?v=I3CpaqCK9B0&ab_channel=Ingresso.com",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "titulo": "Vingadores Endgame",
+      "genero": "Aventura/Ação/Drama",
+      "descricao": "A culminação de 21 filmes interconectados, a quarta edição da saga dos Vingadores vai chamar o público para testemunhar o ponto de virada desta jornada épica. Nossos amados heróis entenderão verdadeiramente o quão frágil é essa realidade e os sacrifícios que devem ser feitos para sustentá-la e reviver os que foram desintegrados.",
+      "imagem": "https://m.media-amazon.com/images/M/MV5BNGZiMzBkZjMtNjE3Mi00MWNlLWIyYjItYTk3MjY0Yjg5ODZkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=g6ng8iy-l0U&ab_channel=Ingresso.com"
+    },
+    {
+      "id": "3",
+      "titulo": "Creed III",
+      "genero": "Drama/Esporte",
+      "descricao": "Creed 3 terá o retorno de Michael B. Jordan como Adonis, filho da lenda Apollo Creed. No entanto, desta vez, parece que ele não enfrentará ninguém do passado de Rocky ou de seu pai, e, em vez disso, enfrentará seus próprios demônios na forma de um amigo, Dame Anderson (Jonathan Majors).",
+      "imagem": "https://dx35vtwkllhj9.cloudfront.net/united-artists-releasing/creed-iii/images/regions/us/onesheet.jpg",
+      "trailer": "https://www.youtube.com/watch?v=y0zV7HEKq-k&ab_channel=MelhoresTrailersdeFilmes"
+    },
+    {
+      "id": "4",
+      "titulo": "Homem Aranha: Sem volta para casa",
+      "genero": "Ação/Aventura",
+      "descricao": "Em Homem-Aranha: Sem Volta para Casa, Peter Parker (Tom Holland) precisará lidar com as consequências da sua identidade como o herói mais querido do mundo após ter sido revelada pela reportagem do Clarim Diário, com uma gravação feita por Mysterio (Jake Gyllenhaal) no filme anterior.",
+      "imagem": "https://www.sonypictures.com.br/sites/brazil/files/2022-03/KEY%20ART_SPIDER%20NO%20WAY%20HOME.JPG",
+      "trailer": "https://www.youtube.com/watch?v=w81ppUfU1sc&t=11s&ab_channel=Ingresso.com"
+    },
+    {
+      "id": "5",
+      "titulo": "Doutor Estranho no Multiverso da Loucura",
+      "genero": "Ação/Aventura",
+      "descricao": "Em Doutor Estranho no Multiverso da Loucura, após derrotar Dormammu e enfrentar Thanos nos eventos de Vingadores: Ultimato, o Mago Supremo, Stephen Strange (Benedict Cumberbatch), e seu parceiro Wong (Benedict Wong), continuam suas pesquisas sobre a Joia do Tempo. Mas um velho amigo que virou inimigo coloca um ponto final nos seus planos e faz com que Strange desencadeie um mal indescritível, o obrigando a enfrentar uma nova e poderosa ameaça.",
+      "imagem": "https://legadodamarvel.com.br/wp-content/uploads/2022/02/legadodamarvel-doutor-estranho-2-no-multiverso-da-loucura-poster-691x1024.jpg",
+      "trailer": "https://www.youtube.com/watch?v=idU-bx2x1a8&ab_channel=MarvelBrasil"
+    },
+    {
+      "id": "6",
+      "titulo": "Pantera Negra 2: Wakanda Para Sempre",
+      "genero": "Ação/Aventura",
+      "descricao": "Pantera Negra: Wakanda Para Sempre é a continuação do longa Pantera Negra, da Marvel, dirigido por Ryan Coogler e produzido por Kevin Feige. No filme, o mundo de Wakanda se expande. Após a morte do ator de T'Challa (Chadwick Boseman) o foco de Wakanda Para Sempre são os personagens em volta do Pantera Negra. Rainha Ramonda (Angela Bassett), Shuri (Letitia Wright), M'Baku (Winston Duke), Okoye (Danai Gurira) e as Dora Milage lutam para proteger a nação fragilizada de outros países após a morte de T'Challa.",
+      "imagem": "https://s2.glbimg.com/CV473j0T17G1kNT369lbJ_jJKSE=/0x0:743x1100/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_ba3db981e6d14e54bb84be31c923b00c/internal_photos/bs/2022/A/A/tUlOuNRDGBdBhUaBgGtg/wakanda.png",
+      "trailer": "https://www.youtube.com/watch?v=r03SFM-huLM&ab_channel=Ingresso.com"
+    },
+    {
+      "titulo": "Tron",
+      "genero": "outra coisa",
+      "descricao": "Sam, filho do famoso programador de jogos de computador Kevin Flynn, é assombrado há muito tempo pelo misterioso desaparecimento do pai. Um sinal estranho leva Sam ao fliperama de Flynn, onde é puxado para dentro de um mundo cibernético, o mesmo em que seu pai está preso há 20 anos. Sem receio, o guerreiro Quorra, Kevin e Sam procuram escapar de um universo que, embora magnífico, é muito mais avançado e perigoso do que Kevin tinha imaginado.",
+      "imagem": "http://simplywallpaper.net/pictures/2010/12/16/Tron-Legacy-Poster-Wallpaper.jpg",
+      "trailer": "https://www.youtube.com/watch?v=L9szn1QQfas",
+      "id": "sk7a6bh"
     }
   ],
-  "comments": [
+  "sessoes": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "filme_id": "1",
+      "data": "Dec 15, 2022",
+      "horario": "23:59:00",
+      "auditorio": "Sala 1",
+      "imagem_tipo": "3D - 2D"
+    },
+    {
+      "filme_id": "2",
+      "data": "Dec 16, 2022",
+      "horario": "23:59:00",
+      "auditorio": "Sala 2",
+      "imagem_tipo": "3D - 2D"
+    },
+    {
+      "filme_id": "3",
+      "data": "Dec 17, 2022",
+      "horario": "23:59:00",
+      "auditorio": "Sala 3",
+      "imagem_tipo": "3D - 2D"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "combos": [
+    {
+      "id": "1",
+      "nome": "Simples",
+      "descricao": "Pipoca pequena + refrigerante"
+    },
+    {
+      "id": "2",
+      "nome": "Médio",
+      "descricao": "Pipoca média + refrigerante + brinde"
+    },
+    {
+      "id": "3",
+      "nome": "Grande",
+      "descricao": "Pipoca grande + 2 refrigerante + 2 brinde"
+    }
+  ]
 }
