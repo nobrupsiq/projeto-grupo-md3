@@ -16,6 +16,9 @@ function Adicionar() {
     await axios.post("http://localhost:3000/filmes", post);
 
     alert("FILME ADICIONADO COM SUCESSO!");
+
+    window.location.reload()
+   
   };
 
   return (

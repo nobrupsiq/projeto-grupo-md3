@@ -35,8 +35,9 @@ function Remover() {
   function RemoverFilme() {
     if (confirm("Tem certeza que deseja remover?"))
       axios.delete('http://localhost:3000/filmes/' + $btclick.sid);
+      
     window.location.reload()
-    // wReload
+    
   }
 
   return (
