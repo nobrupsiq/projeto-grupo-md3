@@ -1,0 +1,21 @@
+import { Link } from 'react-router-dom';
+import style from './Buttons.module.css'
+
+function ButtonsSessao() {
+
+   return (
+      <div className={style.btnContainer}>
+         <Link to={"adicionar"} >
+            <button>Adicionar sessão</button>
+         </Link>
+         <Link to={"atualizar"}>
+            <button>Atualizar sessão</button>
+         </Link>
+         <Link to={"remover"}>
+            <button >Remover sessão</button>
+         </Link>
+      </div>
+   );
+}
+
+export default ButtonsSessao;
