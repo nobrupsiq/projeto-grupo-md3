@@ -1,0 +1,23 @@
+.Items2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+    padding: 40px 1rem 200px 1rem;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Items2>div {
+    width: 25%;
+}
+
+.Items2>div>img {
+    height: 450px;
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .Items2>div {
+        width: 100%;
+    }
+}
