@@ -25,7 +25,7 @@ function Atualizar3() {
     useEffect(() => {
         axios.get("http://localhost:3000/sessoes").then(e => {
             let nomes = []
-            e.data.map(el => nomes.push(el.filme_id))
+            e.data.map(el => nomes.push(el.id))
             Selects(nomes)
         })
     }, [])
@@ -40,9 +40,9 @@ function Atualizar3() {
     }
 
     function mudar() {
-        axios.get("http://localhost:3000/sessoes?filme_id=" + $genero.value).then(e => {
+        axios.get("http://localhost:3000/sessoes?id=" + $genero.value).then(e => {
             let obj = e.data[0]
-            $filme_id.value = obj.filme_id
+            $titulo_filme.value = obj.titulo_filme
             $data.value = obj.data
             $horario.value = obj.horario
             $auditorio.value = obj.auditorio
@@ -54,7 +54,7 @@ function Atualizar3() {
     function Atualizar3() {
 
         let obj = {
-            filme_id: $filme_id.value,
+            titulo_filme: $titulo_filme.value,
             data: $data.value,
             horario: $horario.value,
             auditorio: $auditorio.value,
@@ -76,7 +76,7 @@ function Atualizar3() {
                 <select id="$genero" onChange={mudar}>
                     <option value="Ação">Ação</option>
                 </select>
-                <label data="filme_id"><input id="$filme_id" type="text" placeholder="ID do Filme" /></label>
+                <label data="filme"><input id="$titulo_filme" type="text" placeholder="Título do Filme" /></label>
                 <label data="data"><input id="$data" type="text" placeholder="Data" /></label>
                 <label data="horário"><input id="$horario" type="text" placeholder="Horário" /></label>
                 <label data="auditório"><input id="$auditorio" type="text" placeholder="Auditório" /></label>

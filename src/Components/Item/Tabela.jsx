@@ -13,7 +13,7 @@ function Tabela({ lista }) {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>ID Filme</th>
+            <th>Filme</th>
             <th>Data</th>
             <th>Horário</th>
             <th>Auditório</th>
@@ -23,7 +23,7 @@ function Tabela({ lista }) {
         <tbody>
           {lista2.map((sessao) => (
             <tr key={sessao.id}>
-              <td>{sessao.filme_id}</td>
+              <td>{sessao.titulo_filme}</td>
               <td>{sessao.data}</td>
               <td>{sessao.horario}</td>
               <td>{sessao.auditorio}</td>

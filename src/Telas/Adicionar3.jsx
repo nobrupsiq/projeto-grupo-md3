@@ -1,12 +1,35 @@
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import Header from "../Components/Header";
-import Buttons from "../Components/Buttons/Buttons";
+import { useEffect, useState } from "react";
 
 function Adicionar3() {
+  function Selects(ar) {
+    ar.unshift("Escolha");
+    $genero.innerHTML = "";
+    ar.forEach((e, i) => {
+      let op = document.createElement("option");
+      if (i == 0) {
+        op.setAttribute("disabled", "true");
+        op.setAttribute("selected", "true");
+      }
+      op.value = e;
+      op.innerHTML = e;
+      $genero.appendChild(op);
+    });
+  }
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/filmes").then((e) => {
+      let nomes = [];
+      e.data.map((el) => nomes.push(el.titulo));
+      Selects(nomes);
+    });
+  }, []);
+
   const addInfo = async () => {
     const post = {
-      filme_id: $filme_id.value,
+      titulo_filme: $genero.value,
       data: $data.value,
       horario: $horario.value,
       auditorio: $auditorio.value,
@@ -17,8 +40,7 @@ function Adicionar3() {
 
     alert("SESSÃO ADICIONADA COM SUCESSO!");
 
-    window.location.reload()
-   
+    window.location.reload();
   };
 
   return (
@@ -26,8 +48,10 @@ function Adicionar3() {
       <Header />
       <div style={{ padding: 20, display: "grid", gap: 20 }}>
         <h1>Adicionar Sessão</h1>
-        <label data="ID do Filme">
-          <input id="$filme_id" type="text" placeholder="ID do Filme" />
+        <label data="Filme">
+          <select id="$genero">
+            <option value="Ação">Ação</option>
+          </select>
         </label>
         <label data="Auditório">
           <select id="$auditorio">
@@ -45,16 +69,22 @@ function Adicionar3() {
             <option value="4D">4D</option>
           </select>
         </label>
-
-
-        <label data="Data"><input id="$data" type="text" placeholder="Data" /></label>
-        <label data="Horário"><input id="$horario" type="text" placeholder="Horário" /></label>
-        <Button onClick={addInfo} style={{ backgroundColor: 'var(--orange)' }} variant="warning" size="lg">
+        <label data="Data">
+          <input id="$data" type="text" placeholder="Data" />
+        </label>
+        <label data="Horário">
+          <input id="$horario" type="text" placeholder="Horário" />
+        </label>
+        <Button
+          onClick={addInfo}
+          style={{ backgroundColor: "var(--orange)" }}
+          variant="warning"
+          size="lg"
+        >
           Adicionar sessão
         </Button>{" "}
       </div>
     </div>
-
   );
 }
 

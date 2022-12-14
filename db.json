@@ -59,16 +59,16 @@
   ],
   "sessoes": [
     {
-      "filme_id": "1",
+      "id": "1",
+      "titulo_filme": "Batman 4",
       "data": "Dec 15, 2022",
       "horario": "23:59:00",
       "auditorio": "Sala 1",
-      "imagem_tipo": "2D",
-      "id": "1"
+      "imagem_tipo": "2D"
     },
     {
       "id": "2",
-      "filme_id": "2",
+      "titulo_filme": "Batman 3",
       "data": "Dec 16, 2022",
       "horario": "23:59:00",
       "auditorio": "Sala 2",
@@ -76,19 +76,11 @@
     },
     {
       "id": "3",
-      "filme_id": "3",
+      "titulo_filme": "Batman 2",
       "data": "Dec 17, 2022",
       "horario": "23:59:00",
       "auditorio": "Sala 3",
       "imagem_tipo": "4D"
-    },
-    {
-      "filme_id": "6",
-      "data": "13/12/2022",
-      "horario": "17:00",
-      "auditorio": "Sala 3",
-      "imagem_tipo": "4D",
-      "id": "UKO1wca"
     }
   ],
   "combos": [

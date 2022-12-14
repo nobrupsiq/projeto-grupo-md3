@@ -7,7 +7,7 @@ function Remover3() {
 
   function Selects(ar) {
     ar.unshift("Escolha")
-    $filme_id.innerHTML = ""
+    $id.innerHTML = ""
     ar.forEach((e, i) => {
       let op = document.createElement("option")
       if (i == 0) {
@@ -16,20 +16,20 @@ function Remover3() {
       }
       op.value = e
       op.innerHTML = e
-      $filme_id.appendChild(op)
+      $id.appendChild(op)
     })
   }
 
   useEffect(() => {
     axios.get("http://localhost:3000/sessoes").then(e => {
       let nome = []
-      e.data.map(el => nome.push(el.filme_id))
+      e.data.map(el => nome.push(el.id))
       Selects(nome)
     })
   }, [])
 
   function mudar() {
-    axios.get("http://localhost:3000/sessoes?filme_id=" + $filme_id.value).then(e => $btclick.sid = e.data[0].id)
+    axios.get("http://localhost:3000/sessoes?id=" + $id.value).then(e => $btclick.sid = e.data[0].id)
   }
 
   function RemoverSessao() {
@@ -45,7 +45,7 @@ function Remover3() {
       <Header />
       <div style={{ padding: 20, display: "grid", gap: 20 }}>
         <h1>Remover Sessão</h1>
-        <select id="$filme_id" onChange={mudar}>
+        <select id="$id" onChange={mudar}>
           <option value="Ação">Ação</option>
         </select>
 
