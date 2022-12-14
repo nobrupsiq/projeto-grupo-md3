@@ -6,3 +6,12 @@
     align-items: center;
     color: var(--blue);
 }
+
+.tabela2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+    padding: 40px 1em 80px 1em;
+    justify-content: center;
+    gap: 40px;
+}

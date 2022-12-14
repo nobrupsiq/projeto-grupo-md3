@@ -3,7 +3,7 @@ import Footer from '../Footer';
 import Header from '../Header';
 import styles from './sessoes.module.css'
 import axios from "axios";
-import Items3 from '../Items/Items3';
+import Tabela from '../Item/Tabela';
 import Buttons3 from '../Buttons/Buttons3';
 
 
@@ -28,10 +28,11 @@ function Sessoes() {
          <section className={styles.capaSessoes}>
             <h1>SESSÕES</h1>
          </section>
-         <div>
-            <Items3 lista={lista} />
+         <div className={styles.tabela2}>
+            <Tabela lista={lista} />
          </div>
             <Buttons3 />
+         <div />
          <Footer />
       </div>
    )
