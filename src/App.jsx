@@ -9,7 +9,9 @@ import Adicionar3 from './Telas/Adicionar3';
 import Atualizar from './Telas/Atualizar'
 import Atualizar3 from './Telas/Atualizar3';
 import Remover from './Telas/Remover'
-import Remover3 from './Telas/Remover3';
+import Atualizar2 from './Telas/Atualizar2';
+import Adicionar2 from './Telas/Adicionar2';
+import Remover2 from './Telas/Remover2';
 
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="filmes/*" element={<Filmes />} />
             <Route path="combos/*" element={<Combos />} />
+            <Route path="combos/atualizar" element={<Atualizar2 />} />
+            <Route path="combos/adicionar" element={<Adicionar2 />} />
+            <Route path="combos/remover" element={<Remover2 />} />
             <Route path="sessoes/*" element={<Sessoes />} />
             <Route path="/filmes/adicionar" element={<Adicionar />} />
             <Route path="/filmes/atualizar" element={<Atualizar />} />

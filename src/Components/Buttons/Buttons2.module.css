@@ -1,0 +1,18 @@
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 60px;
+    border: 1px solid var(--black);
+    border-right: none;
+  }
+  
+  .btnContainer button {
+    border: none;
+    background-color: var(--orange);
+    color: var(--black);
+    padding: 5px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
