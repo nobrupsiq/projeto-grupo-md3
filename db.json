@@ -59,12 +59,28 @@
   ],
   "sessoes": [
     {
-      "filme_id": "10",
-      "data": "ffdfdf",
-      "horario": "fdfdf",
+      "filme_id": "1",
+      "data": "Dec 15, 2022",
+      "horario": "23:59:00",
       "auditorio": "Sala 1",
-      "imagem_tipo": "3D",
-      "id": 4
+      "imagem_tipo": "5D",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "filme_id": "2",
+      "data": "Dec 16, 2022",
+      "horario": "23:59:00",
+      "auditorio": "Sala 2",
+      "imagem_tipo": "3D"
+    },
+    {
+      "id": "3",
+      "filme_id": "3",
+      "data": "Dec 17, 2022",
+      "horario": "23:59:00",
+      "auditorio": "Sala 3",
+      "imagem_tipo": "4D"
     }
   ],
   "combos": [

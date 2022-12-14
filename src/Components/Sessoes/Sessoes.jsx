@@ -3,8 +3,8 @@ import Footer from '../Footer';
 import Header from '../Header';
 import styles from './sessoes.module.css'
 import axios from "axios";
-import ItemsSessao from '../Items/ItemsSessao';
-import ButtonsSessao from '../Buttons/ButtonsSessao';
+import Items3 from '../Items/Items3';
+import Buttons3 from '../Buttons/Buttons3';
 
 
 function Sessoes() {
@@ -26,10 +26,12 @@ function Sessoes() {
       <div>
          <Header />
          <section className={styles.capaSessoes}>
-            <h1>SESSOES</h1>
-            <ItemsSessao lista={lista} />
-            <ButtonsSessao />
+            <h1>SESSÕES</h1>
          </section>
+         <div>
+            <Items3 lista={lista} />
+         </div>
+            <Buttons3 />
          <Footer />
       </div>
    )

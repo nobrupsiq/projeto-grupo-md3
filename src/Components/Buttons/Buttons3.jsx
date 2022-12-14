@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import style from './Buttons.module.css'
+import style from './Buttons3.module.css'
 
-function ButtonsSessao() {
+function Buttons3() {
 
    return (
       <div className={style.btnContainer}>
@@ -18,4 +18,4 @@ function ButtonsSessao() {
    );
 }
 
-export default ButtonsSessao;
+export default Buttons3;

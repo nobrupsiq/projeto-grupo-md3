@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import ItemSessao from '../Item/ItemSessao'
-import "./Items.css"
+import Item3 from '../Item/Item3'
+import "./Items3.css"
 
-function ItemsSessao({ lista }) {
+function Items3({ lista }) {
 
    let [lista2, setLista2] = useState([])
 
@@ -11,12 +11,12 @@ function ItemsSessao({ lista }) {
    }, [lista])
 
    return (
-      <div className='ItemsSessao'>
+      <div className='Items3'>
          {lista2.map((elemento, indice) => {
-            return <ItemSessao key={indice} {...elemento} />
+            return <Item3 key={indice} {...elemento} />
          })}
       </div>
    );
 }
 
-export default ItemsSessao;
+export default Items3;

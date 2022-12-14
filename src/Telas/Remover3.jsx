@@ -3,11 +3,11 @@ import axios from "axios";
 import Header from "../Components/Header";
 import { useEffect, useState } from "react";
 
-function RemoverSessao() {
+function Remover3() {
 
   function Selects(ar) {
     ar.unshift("Escolha")
-    $sessao.innerHTML = ""
+    $filme_id.innerHTML = ""
     ar.forEach((e, i) => {
       let op = document.createElement("option")
       if (i == 0) {
@@ -16,23 +16,23 @@ function RemoverSessao() {
       }
       op.value = e
       op.innerHTML = e
-      $sessao.appendChild(op)
+      $filme_id.appendChild(op)
     })
   }
 
   useEffect(() => {
     axios.get("http://localhost:3000/sessoes").then(e => {
-      let nomes = []
-      e.data.map(el => nomes.push(el.filme_id))
-      Selects(nomes)
+      let nome = []
+      e.data.map(el => nome.push(el.filme_id))
+      Selects(nome)
     })
   }, [])
 
   function mudar() {
-    axios.get("http://localhost:3000/sessoes?titulo=" + $sessao.value).then(e => $btclick.sid = e.data[0].id)
+    axios.get("http://localhost:3000/sessoes?filme_id=" + $filme_id.value).then(e => $btclick.sid = e.data[0].id)
   }
 
-  function RemoverS() {
+  function RemoverSessao() {
     if (confirm("Tem certeza que deseja remover?"))
       axios.delete('http://localhost:3000/sessoes/' + $btclick.sid);
       
@@ -45,14 +45,14 @@ function RemoverSessao() {
       <Header />
       <div style={{ padding: 20, display: "grid", gap: 20 }}>
         <h1>Remover Sessão</h1>
-        <select id="$sessao" onChange={mudar}>
+        <select id="$filme_id" onChange={mudar}>
           <option value="Ação">Ação</option>
         </select>
 
-        <Button id="$btclick" style={{ backgroundColor: 'var(--orange)' }} variant="warning" size="lg" onClick={RemoverS} >Remover</Button>
+        <Button id="$btclick" style={{ backgroundColor: 'var(--orange)' }} variant="warning" size="lg" onClick={RemoverSessao} >Remover</Button>
       </div>
     </div>
   );
 }
 
-export default RemoverSessao;
+export default Remover3;

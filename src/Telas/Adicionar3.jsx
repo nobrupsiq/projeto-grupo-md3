@@ -3,7 +3,7 @@ import axios from "axios";
 import Header from "../Components/Header";
 import Buttons from "../Components/Buttons/Buttons";
 
-function AdicionarSessao() {
+function Adicionar3() {
   const addInfo = async () => {
     const post = {
       filme_id: $filme_id.value,
@@ -41,7 +41,7 @@ function AdicionarSessao() {
         <label data="Tipo">
           <select id="$imagem_tipo">
             <option value="3D">3D</option>
-            <option value="22">2D</option>
+            <option value="2D">2D</option>
             <option value="4D">4D</option>
           </select>
         </label>
@@ -58,4 +58,4 @@ function AdicionarSessao() {
   );
 }
 
-export default AdicionarSessao;
+export default Adicionar3;
