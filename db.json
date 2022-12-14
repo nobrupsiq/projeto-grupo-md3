@@ -81,6 +81,22 @@
       "horario": "23:59:00",
       "auditorio": "Sala 3",
       "imagem_tipo": "4D"
+    },
+    {
+      "titulo_filme": "Adão Negro 3",
+      "data": "Dec 13, 2022",
+      "horario": "17:00",
+      "auditorio": "Sala 4",
+      "imagem_tipo": "4D",
+      "id": "2_hSd4h"
+    },
+    {
+      "titulo_filme": "Vingadores Endgame",
+      "data": "14/12/2022",
+      "horario": "17:00",
+      "auditorio": "Sala 1",
+      "imagem_tipo": "3D",
+      "id": "eQWOCSl"
     }
   ],
   "combos": [

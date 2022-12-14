@@ -5,13 +5,14 @@ import Filmes from './Components/Filmes/Filmes';
 import Home from './Components/Home/Home';
 import Sessoes from './Components/Sessoes/Sessoes';
 import Adicionar from './Telas/Adicionar'
+import Adicionar2 from './Telas/Adicionar2';
 import Adicionar3 from './Telas/Adicionar3';
 import Atualizar from './Telas/Atualizar'
+import Atualizar2 from './Telas/Atualizar2';
 import Atualizar3 from './Telas/Atualizar3';
 import Remover from './Telas/Remover'
-import Atualizar2 from './Telas/Atualizar2';
-import Adicionar2 from './Telas/Adicionar2';
 import Remover2 from './Telas/Remover2';
+import Remover3 from './Telas/Remover3';
 
 
 function App() {
