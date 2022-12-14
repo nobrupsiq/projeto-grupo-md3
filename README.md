@@ -93,13 +93,13 @@ npm start
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Purple | ![#6639DA](https://via.placeholder.com/10/6639DA?text=+) #6639DA |
-|  Blue | ![#61BAFC](https://via.placeholder.com/10/61BAFC?text=+) #61BAFC |
-|  Orange       | ![#FDA529](https://via.placeholder.com/10/FDA529?text=+) #FDA529 |
-|  Gray 1       | ![#C2C4D1](https://via.placeholder.com/10/C2C4D1?text=+) #C2C4D1 |
-|  Gray 2       | ![#404040](https://via.placeholder.com/10/404040?text=+) #404040 |
-|  Black      | ![#000000](https://via.placeholder.com/10/000?text=+) #000000 |
-|  White       | ![#ffffff](https://via.placeholder.com/10/fff?text=+) #ffffff |
+| Purple |  ![#6639DA](./.github/Colors/purple.png) #6639DA |
+|  Blue | ![#61BAFC](./.github/Colors/blue.png) #61BAFC |
+|  Orange       | ![#FDA529](./.github/Colors/orange.png) #FDA529 |
+|  Gray 1       | ![#C2C4D1](./.github/Colors/gray-1.png) #C2C4D1 |
+|  Gray 2       | ![#404040](./.github/Colors/gray-2.png) #404040 |
+|  Black      | ![#000000](./.github/Colors/black.png) #000000 |
+|  White       | ![#ffffff](./.github/Colors/white.png) #ffffff |
 
 ## Screenshots
 
