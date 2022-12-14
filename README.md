@@ -1,5 +1,18 @@
 
 # Módulo 3 – Sendo servido
+
+<h1 align='center'>
+🚧 Projeto em construção 🚧
+</h1>
+
+<br>
+
+<h1 align="center">
+  <img height="60" alt="" title="" src="./.github/Logo.svg" />
+</h1>
+
+<br>
+
  #### Cinemix se baseia em uma plataforma de cinema que simula o lado do administrador onde o mesmo poderá realizar os métodos:
 
  - GET = <i>Listar</i>
@@ -66,7 +79,8 @@ npm start
 ```
 <br>
 
-## Stack utilizada
+
+## ✔ Stack utilizada
 
 - **Front-end:** React, Bootstrap
 
@@ -75,6 +89,7 @@ npm start
 <br>
 
 ## Documentação de cores
+
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
