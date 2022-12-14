@@ -27,13 +27,14 @@ function Adicionar2() {
                 <label data="Nome">
                     <input id="$nome" type="text" placeholder="Nome" />
                 </label>
-                <label data="Tamanho">
+
+                {/* <label data="Tamanho">
                     <select id="$genero">
                         <option value="Ação">Pequeno</option>
                         <option value="Aventura">Medio</option>
                         <option value="Cinema de arte">Grande</option>
                     </select>
-                </label>
+                </label> */}
 
 
                 <label data="descricao"><input id="$descricao" type="text" placeholder="Descricão" /></label>
