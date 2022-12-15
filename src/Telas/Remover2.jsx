@@ -1,12 +1,12 @@
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import Header from "../Components/Header";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Remover2() {
 
   function Selects(ar) {
-    ar.unshift("Selecione o combo a ser removido")
+    ar.unshift("Escolha")
     $nome.innerHTML = ""
     ar.forEach((e, i) => {
       let op = document.createElement("option")
@@ -35,9 +35,9 @@ function Remover2() {
   function RemoverFilme() {
     if (confirm("Tem certeza que deseja remover?"))
       axios.delete('http://localhost:3000/combos/' + $btclick.sid);
-
+      
     window.location.reload()
-
+    
   }
 
   return (

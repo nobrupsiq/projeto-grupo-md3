@@ -1,6 +1,7 @@
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import Header from "../Components/Header";
+import Buttons from "../Components/Buttons/Buttons";
 
 function Adicionar() {
   const addInfo = async () => {
@@ -17,7 +18,7 @@ function Adicionar() {
     alert("FILME ADICIONADO COM SUCESSO!");
 
     window.location.reload()
-
+   
   };
 
   return (

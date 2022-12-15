@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 function Adicionar3() {
   function Selects(ar) {
-    ar.unshift("Escolha o filme");
+    ar.unshift("Escolha");
     $genero.innerHTML = "";
     ar.forEach((e, i) => {
       let op = document.createElement("option");

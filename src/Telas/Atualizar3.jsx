@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 function Atualizar3() {
 
-    let [sessoes] = useState([])
+    let [sessoes, setSessoes] = useState(["computador", "agua"])
 
     function Selects(ar) {
         ar.unshift("Escolha")
@@ -35,6 +35,10 @@ function Atualizar3() {
         Selects(sessoes)
     }, [sessoes])
 
+    function trocar() {
+        setCombos(['ok', 'a', 'xxx'])
+    }
+
     function mudar() {
         axios.get("http://localhost:3000/sessoes?id=" + $genero.value).then(e => {
             let obj = e.data[0]
@@ -59,6 +63,7 @@ function Atualizar3() {
 
         axios.put('http://localhost:3000/sessoes/' + $btclick.sid, obj);
 
+
         window.location.reload()
 
     }
@@ -69,7 +74,7 @@ function Atualizar3() {
             <div style={{ padding: 20, display: "grid", gap: 20 }}>
                 <h1>Atualizar Sessões</h1>
                 <select id="$genero" onChange={mudar}>
-                    <option value="Ação"></option>
+                    <option value="Ação">Ação</option>
                 </select>
                 <label data="filme"><input id="$titulo_filme" type="text" placeholder="Título do Filme" /></label>
                 <label data="data"><input id="$data" type="text" placeholder="Data" /></label>
