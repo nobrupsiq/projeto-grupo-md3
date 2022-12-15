@@ -12,6 +12,7 @@ import Header from '../Header'
 import Items from '../Items/Items'
 import Slider from '../Slider/Slider'
 import axios from 'axios';
+import Loader from '../Loader-spinner/Loader';
 
 function Home() {
   let [lista, setLista] = useState([]);
@@ -31,8 +32,10 @@ function Home() {
   return (
     <div>
       <Header />
+
       <Slider />
       <Bar />
+      <Loader />
       <Items lista={lista} />
       <Footer />
     </div>
