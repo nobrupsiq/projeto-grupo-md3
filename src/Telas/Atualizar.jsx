@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 
 function Atualizar() {
 
-  let [filmes, setFilmes] = useState(["computador", "agua"])
+  let [filmes] = useState([])
 
   function Selects(ar) {
-    ar.unshift("Escolha")
+    ar.unshift("Selecione o filme a ser atualizado")
     $genero.innerHTML = ""
     ar.forEach((e, i) => {
       let op = document.createElement("option")
@@ -35,10 +35,6 @@ function Atualizar() {
     Selects(filmes)
   }, [filmes])
 
-  function trocar() {
-    setFilmes(['ok', 'a', 'xxx'])
-  }
-
   function mudar() {
     axios.get("http://localhost:3000/filmes?titulo=" + $genero.value).then(e => {
       let obj = e.data[0]
@@ -61,7 +57,6 @@ function Atualizar() {
     }
 
     axios.put('http://localhost:3000/filmes/' + $btclick.sid, obj);
-
 
     window.location.reload()
 

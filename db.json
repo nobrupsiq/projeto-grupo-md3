@@ -97,6 +97,22 @@
       "auditorio": "Sala 1",
       "imagem_tipo": "3D",
       "id": "eQWOCSl"
+    },
+    {
+      "titulo_filme": "Creed III",
+      "data": "15/12/2022",
+      "horario": "19:00",
+      "auditorio": "Sala 2",
+      "imagem_tipo": "2D",
+      "id": "oJAh4Ed"
+    },
+    {
+      "titulo_filme": "Vingadores Endgame",
+      "data": "20/20/23",
+      "horario": "19:00",
+      "auditorio": "Sala 1",
+      "imagem_tipo": "3D",
+      "id": "l7z3tjk"
     }
   ],
   "combos": [

@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 
 function Atualizar2() {
 
-    let [combos, setCombos] = useState(["computador", "agua"])
+    let [combos] = useState([])
 
     function Selects(ar) {
-        ar.unshift("Escolha")
+        ar.unshift("Selecione o combo a ser atualizado")
         $genero.innerHTML = ""
         ar.forEach((e, i) => {
             let op = document.createElement("option")
@@ -34,10 +34,6 @@ function Atualizar2() {
     useEffect(() => {
         Selects(combos)
     }, [combos])
-
-    function trocar() {
-        setCombos(['ok', 'a', 'xxx'])
-    }
 
     function mudar() {
         axios.get("http://localhost:3000/combos?nome=" + $genero.value).then(e => {
