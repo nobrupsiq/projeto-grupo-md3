@@ -1,8 +1,12 @@
 import Card from 'react-bootstrap/Card';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+
 
 function Item({ imagem, titulo, descricao, trailer }) {
    return (
-      <Card>
+      <Card data-aos="fade-up" data-aos-duration='1000' data-aos-delay="120">
          <Card.Img variant="top" src={imagem} />
          <Card.Body >
             <Card.Title >{titulo}</Card.Title>
@@ -16,8 +20,7 @@ function Item({ imagem, titulo, descricao, trailer }) {
       </Card>
 
    );
-
 }
-
+AOS.init();
 
 export default Item;

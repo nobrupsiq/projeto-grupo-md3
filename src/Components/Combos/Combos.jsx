@@ -24,15 +24,11 @@ function Combos() {
          <Header />
          <section className={styles.capaCombo}>
             <h1>COMBOS</h1>
-         
          </section>
-         <div>
-            <Items2 lista={lista} />
-            
-            </div>
-            <Buttons2 />
+         <Items2 lista={lista} />
+         <Buttons2 />
          <Footer />
-      </div>
+      </div >
    )
 }
 

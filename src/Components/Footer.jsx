@@ -8,8 +8,7 @@ function Footer() {
       justifyContent: 'space-around',
       backgroundColor: '#6639DA',
       color: '#FFF',
-      padding: '20px 0'
-
+      padding: '20px 0',
    }
    return (
       <footer style={foot}>

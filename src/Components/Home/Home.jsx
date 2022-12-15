@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../App.css';
-import Filmes from '../Filmes/Filmes';
-import Combos from '../Combos/Combos';
-import Sessoes from '../Sessoes/Sessoes';
-import Buttons from '../Buttons/Buttons'
 import Bar from '../Filmes/Bar'
 import Footer from '../Footer'
 import Header from '../Header'

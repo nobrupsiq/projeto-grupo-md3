@@ -10,17 +10,15 @@ import Buttons3 from '../Buttons/Buttons3';
 function Sessoes() {
    let [lista, setLista] = useState([]);
 
-  useEffect(() => {
-    // let url = 'https://nobrupsiq.github.io/projeto-individual-resilia-MD3/db.json';
-    let url = "http://localhost:3000/sessoes";
+   useEffect(() => {
+      let url = "http://localhost:3000/sessoes";
 
-    const getPosts = async () => {
-      const { data: res } = await axios.get(url);
-      // setLista(res.filmes);
-      setLista(res);
-    };
-    getPosts();
-  }, []);
+      const getPosts = async () => {
+         const { data: res } = await axios.get(url);
+         setLista(res);
+      };
+      getPosts();
+   }, []);
 
    return (
       <div>
@@ -31,7 +29,7 @@ function Sessoes() {
          <div className={styles.tabela2}>
             <Tabela lista={lista} />
          </div>
-            <Buttons3 />
+         <Buttons3 />
          <div />
          <Footer />
       </div>

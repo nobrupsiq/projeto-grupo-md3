@@ -27,9 +27,11 @@ function Filmes() {
       <section>
         <h1 className="capa-filmes">FILMES</h1>
         <Items lista={lista} />
-        <Buttons />
       </section>
-      <Footer />
+      <div data-aos="zoom-in" data-aos-duration='1000' data-aos-delay="50">
+        <Buttons />
+        <Footer />
+      </div>
     </div>
   );
 }
