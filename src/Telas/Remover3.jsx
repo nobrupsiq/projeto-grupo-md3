@@ -35,9 +35,9 @@ function Remover3() {
   function RemoverSessao() {
     if (confirm("Tem certeza que deseja remover?"))
       axios.delete('http://localhost:3000/sessoes/' + $btclick.sid);
-
+      
     window.location.reload()
-
+    
   }
 
   return (

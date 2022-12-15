@@ -1,12 +1,12 @@
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import Header from "../Components/Header";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Remover() {
 
   function Selects(ar) {
-    ar.unshift("Selecione o filme a ser removido")
+    ar.unshift("Escolha")
     $genero.innerHTML = ""
     ar.forEach((e, i) => {
       let op = document.createElement("option")
@@ -35,9 +35,9 @@ function Remover() {
   function RemoverFilme() {
     if (confirm("Tem certeza que deseja remover?"))
       axios.delete('http://localhost:3000/filmes/' + $btclick.sid);
-
+      
     window.location.reload()
-
+    
   }
 
   return (
