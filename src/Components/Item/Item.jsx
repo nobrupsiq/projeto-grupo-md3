@@ -14,7 +14,10 @@ function Item({ imagem, titulo, descricao, trailer }) {
 
          </Card.Body>
       </Card>
+
    );
+
 }
+
 
 export default Item;

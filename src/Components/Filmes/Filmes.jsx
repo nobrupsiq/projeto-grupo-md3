@@ -9,6 +9,7 @@ function Filmes() {
   let [lista, setLista] = useState([]);
 
   useEffect(() => {
+
     // let url = 'https://nobrupsiq.github.io/projeto-individual-resilia-MD3/db.json';
     let url = "http://localhost:3000/filmes";
 
@@ -26,7 +27,7 @@ function Filmes() {
       <section>
         <h1 className="capa-filmes">FILMES</h1>
         <Items lista={lista} />
-        <Buttons  />
+        <Buttons />
       </section>
       <Footer />
     </div>

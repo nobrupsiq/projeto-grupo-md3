@@ -35,6 +35,7 @@ function App() {
             <Route path="/sessoes/remover" element={<Remover3 />} />
          </Routes>
       </BrowserRouter>
+
    );
 }
 
