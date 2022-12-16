@@ -1,10 +1,6 @@
 
 # Módulo 3 – Sendo servido
 
-<h1 align='center'>
-🚧 Projeto em construção 🚧
-</h1>
-
 <br>
 
 <h1 align="center">
