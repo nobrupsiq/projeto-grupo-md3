@@ -62,7 +62,7 @@ function Atualizar() {
 
     axios.put('http://localhost:3000/filmes/' + $btclick.sid, obj);
 
-
+    alert('FILME ATUALIZADO COM SUCESSO! ✔')
     window.location.reload()
 
   }

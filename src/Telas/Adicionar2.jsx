@@ -1,7 +1,6 @@
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import Header from "../Components/Header";
-import Buttons from "../Components/Buttons/Buttons";
 
 function Adicionar2() {
     const addInfo = async () => {
@@ -13,7 +12,7 @@ function Adicionar2() {
 
         await axios.post("http://localhost:3000/combos", post);
 
-        alert("COMBO ADICIONADO COM SUCESSO!");
+        alert("COMBO ADICIONADO COM SUCESSO! 🍕");
 
         window.location.reload()
 
@@ -27,15 +26,6 @@ function Adicionar2() {
                 <label data="Nome">
                     <input id="$nome" type="text" placeholder="Nome" />
                 </label>
-
-                {/* <label data="Tamanho">
-                    <select id="$genero">
-                        <option value="Ação">Pequeno</option>
-                        <option value="Aventura">Medio</option>
-                        <option value="Cinema de arte">Grande</option>
-                    </select>
-                </label> */}
-
 
                 <label data="descricao"><input id="$descricao" type="text" placeholder="Descricão" /></label>
                 <label data="imagem"><input id="$imagem" type="text" placeholder="Image" /></label>

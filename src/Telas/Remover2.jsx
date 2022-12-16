@@ -33,11 +33,13 @@ function Remover2() {
   }
 
   function RemoverFilme() {
-    if (confirm("Tem certeza que deseja remover?"))
+    if (confirm("TEM CERTEZA QUE DESEJA REMOVER O COMBO? 😪")) {
       axios.delete('http://localhost:3000/combos/' + $btclick.sid);
-      
+      alert('COMBO REMOVIDO COM SUCESSO! 🌭')
+    }
+
     window.location.reload()
-    
+
   }
 
   return (

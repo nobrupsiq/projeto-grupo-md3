@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 function Atualizar3() {
 
-    let [sessoes, setSessoes] = useState(["computador", "agua"])
+    let [sessoes] = useState([])
 
     function Selects(ar) {
         ar.unshift("Escolha")
@@ -35,9 +35,6 @@ function Atualizar3() {
         Selects(sessoes)
     }, [sessoes])
 
-    function trocar() {
-        setCombos(['ok', 'a', 'xxx'])
-    }
 
     function mudar() {
         axios.get("http://localhost:3000/sessoes?id=" + $genero.value).then(e => {
@@ -63,7 +60,7 @@ function Atualizar3() {
 
         axios.put('http://localhost:3000/sessoes/' + $btclick.sid, obj);
 
-
+        alert('SESSÃO ATUALIZADA COM SUCESSO! 🎥')
         window.location.reload()
 
     }

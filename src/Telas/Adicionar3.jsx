@@ -38,7 +38,7 @@ function Adicionar3() {
 
     await axios.post("http://localhost:3000/sessoes", post);
 
-    alert("SESSÃO ADICIONADA COM SUCESSO!");
+    alert("SESSÃO ADICIONADA COM SUCESSO! 🎥");
 
     window.location.reload();
   };
@@ -49,7 +49,7 @@ function Adicionar3() {
       <div style={{ padding: 20, display: "grid", gap: 20 }}>
         <h1>Adicionar Sessão</h1>
         <label data="Filme">
-          <select id="$genero">
+          <select id="$genero" >
             <option value="Ação">Ação</option>
           </select>
         </label>
@@ -63,14 +63,14 @@ function Adicionar3() {
           </select>
         </label>
         <label data="Tipo">
-          <select id="$imagem_tipo">
+          <select id="$imagem_tipo" >
             <option value="3D">3D</option>
             <option value="2D">2D</option>
             <option value="4D">4D</option>
           </select>
         </label>
         <label data="Data">
-          <input id="$data" type="text" placeholder="Data" />
+          <input id="$data" type="date" placeholder="Data" />
         </label>
         <label data="Horário">
           <input id="$horario" type="text" placeholder="Horário" />

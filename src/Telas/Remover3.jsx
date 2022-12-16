@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import Header from "../Components/Header";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 function Remover3() {
 
@@ -33,11 +33,13 @@ function Remover3() {
   }
 
   function RemoverSessao() {
-    if (confirm("Tem certeza que deseja remover?"))
+    if (confirm("TEM CERTEZA QUE DESEJA REMOVER A SESSÃO? 😥")) {
       axios.delete('http://localhost:3000/sessoes/' + $btclick.sid);
-      
+      alert('SESSÃO REMOVIDA COM SUCESSO! ✔')
+    }
+
     window.location.reload()
-    
+
   }
 
   return (

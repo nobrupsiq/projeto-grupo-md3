@@ -33,11 +33,13 @@ function Remover() {
   }
 
   function RemoverFilme() {
-    if (confirm("Tem certeza que deseja remover?"))
+    if (confirm("TEM CERTEZA QUE DESEJA REMOVER O FILME? 😥")) {
+      alert('FILME REMOVIDO COM SUCESSO! ✔')
       axios.delete('http://localhost:3000/filmes/' + $btclick.sid);
-      
+    }
+
     window.location.reload()
-    
+
   }
 
   return (
