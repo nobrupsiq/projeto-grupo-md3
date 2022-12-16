@@ -112,19 +112,19 @@
       "id": "1",
       "nome": "Simples",
       "descricao": "Pipoca pequena + refrigerante",
-      "imagem": "https://www.cinesystem.com.br/bomboniere/images/combos/combo-super.png"
+      "imagem": "https://i.postimg.cc/3RQcDGxM/combo-1.png"
     },
     {
       "id": "2",
       "nome": "Médio",
       "descricao": "Pipoca média + 2 refrigerante ",
-      "imagem": "https://www.cinesystem.com.br/bomboniere/images/combos/combo-duplo.png"
+      "imagem": "https://i.postimg.cc/GtcgX1Dq/combo2.png"
     },
     {
       "id": "3",
       "nome": "Grande",
       "descricao": "Pipoca grande + 2 refrigerante",
-      "imagem": "https://www.cinesystem.com.br/bomboniere/images/combos/combo-max-duplo.png"
+      "imagem": "https://i.postimg.cc/PJ23cFzh/combo3.png"
     }
   ]
 }
