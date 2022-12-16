@@ -105,31 +105,40 @@ a {
   overflow: hidden;
 }
 
-.carousel-control-next{display: none;}
-.carousel-control-prev{display: none;}
+.carousel-control-next {
+  display: none;
+}
 
-input, select{
+.carousel-control-prev {
+  display: none;
+}
+
+input,
+select {
   padding: 10px;
   border-radius: 5px;
   outline: none;
   border: solid 2px #C2C4D1;
 }
-input:hover, select:hover{
-   border: solid 2px #61BAFC;
-   /* box-shadow: 3px 3px 0px black; */
+
+input:hover,
+select:hover {
+  border: solid 2px var(--orange);
+  /* box-shadow: 3px 3px 0px var(--purple); */
 }
 
 
-label{
+label {
   position: relative;
   display: block;
 }
 
-label input{
+label input,
+select {
   width: 100%;
 }
 
-label::after{
+label::after {
   content: attr(data);
   position: absolute;
   top: -10px;
@@ -141,7 +150,7 @@ label::after{
   font-weight: 600;
 }
 
-.capa-filmes{
+.capa-filmes {
   background-color: var(--gray-2);
   height: 250px;
   display: flex;

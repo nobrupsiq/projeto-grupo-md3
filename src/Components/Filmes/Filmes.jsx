@@ -28,7 +28,7 @@ function Filmes() {
         <h1 className="capa-filmes">FILMES</h1>
         <Items lista={lista} />
       </section>
-      <div data-aos="zoom-in" data-aos-duration='1000' data-aos-delay="50">
+      <div>
         <Buttons />
         <Footer />
       </div>

@@ -18,7 +18,7 @@ function Adicionar() {
     alert("FILME ADICIONADO COM SUCESSO!");
 
     window.location.reload()
-   
+
   };
 
   return (
